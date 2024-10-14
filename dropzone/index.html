@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Convert IPYNB to PDF</title>
+    <link href="/vendor/mdc.min.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/options/icons.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/options/index.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/dropzone/css/index.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="/vendor/mdc.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/vendor/mithril.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="/vendor/es5-shim.min.js"></script>
+    <script type="text/javascript" src="/vendor/marked.min.js"></script>
+    <script type="text/javascript" src="/vendor/ansi_up.min.js"></script>
+    <script type="text/javascript" src="/vendor/prism.min.js"></script>
+    <script type="text/javascript" src="/vendor/katex.min.js"></script>
+    <script type="text/javascript" src="/vendor/katex-auto-render.min.js"></script>
+    <script type="text/javascript" src="/vendor/notebook.min.js"></script>
+    <script src="/vendor/jspdf.umd.min.js"></script>
+    <script src="/vendor/purify.min.js"></script>
+    <script src="/vendor/html2canvas.min.js"></script>
+    <script src="/vendor/canvas2image.min.js"></script>
+    <link rel="stylesheet" href="/vendor/assets/katex.min.css"/>
+    <link rel="stylesheet" href="/vendor/assets/prism.css"/>
+    <link rel="stylesheet" href="/vendor/assets/notebook.css"/>
+    <link rel="stylesheet" href="/vendor/assets/nbpreview.css"/>
+    <link rel="stylesheet" href="/dropzone/css/modal.css"/>
+    <link rel="stylesheet" href="/dropzone/css/loader.css"/>
+  </head>
+  <body class="mdc-typography">
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content" style="max-height: 600px; max-width: 600px; height: 50%; width: 50%; border-radius: 20px; min-width: 400px; min-height: 400px">
+        <!--<span class="close">&times;</span>-->
+        <p style="font-size: 1.5rem; color: black;">Your file is being converted</p>
+        <p style="font-size: 1.25rem; color: rgba(0, 0, 0, 0.7);">Please wait a moment while we convert your file to PDF</p>
+        <div style="display: flex; width: 100%; height: 100%; justify-content: space-around; align-items: center;">
+          <span class="loader"></span>
+
+        </div>
+      </div>
+
+    </div>
+    <div id="wrapper">
+      <div id="header">
+        <div class="holder">
+          <img src="../icons/128x128.png" width="48px" height="48px" style="margin-right: 10px"><span>Convert IPYNB to PDF</span>
+        </div>
+      </div>
+      <main style="padding: 60px 0 0 0;"></main>
+      <div id="footer-push">&nbsp;</div>
+    </div>
+  </body>
+  <script src="/dropzone/index.js" type="text/javascript" charset="utf-8"></script>
+</html>
+
