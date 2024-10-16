@@ -2,7 +2,8 @@
   "manifest_version": 3,
   "name"            : "IPYNB to PDF",
   "version"         : "0.6",
-  "description"     : "IPYNB to PDF",
+  "description"     : "Convert IPYNB to PDF online in 2 clicks! This Jupyter Notebook to PDF converter transforms .ipynb to PDF easily.",
+  "default_locale": "en",
 
   "action": {
     "default_icon": {
