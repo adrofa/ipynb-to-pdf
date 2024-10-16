@@ -1,6 +1,6 @@
 {
   "appName": {
-    "message": "IPYNB'den PDF'ye"
+    "message": "IPYNB to PDF"
   },
   "shortDesc": {
     "message": "IPYNB dosyasını 2 tıklamayla çevrimiçi PDF'ye dönüştürün! Bu Jupyter Notebook dönüştürücü, .ipynb dosyasını kolayca PDF'ye çevirir."
